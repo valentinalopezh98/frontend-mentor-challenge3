@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap'); 
+
+:root{
+    --primary-dark-cyan: hsl(158, 36%, 37%);
+    --primary-cream: hsl(30, 38%, 92%);
+    --neutral-very-dark-blue: hsl(212, 21%, 14%);
+    --neutral-dark-grayish-blue: hsl(228, 12%, 48%);
+    --neutral-white: hsl(0, 0%, 100%);
+}   
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-size: 1.4rem;
+    color: var(--neutral-dark-grayish-blue);
+    word-spacing: 0.1rem;
+}
+
+.card-container{
+    width: 90%;
+    height: 90%;
+    max-width: 350px;
+    max-height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--neutral-white);
+}
+
+.card-container img{
+    width: 100%;
+}
+
+.img-desktop{
+    display: none;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px;
+}
+
+.subtitle{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: var(--neutral-dark-grayish-blue);
+}
+
+.title{
+    font-family: 'Fraunces', serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.prices{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.left-price{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: var(--primary-dark-cyan);
+    font-size: 3rem;
+}
+
+.right-price{
+    text-decoration: line-through;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    align-self: center;
+    width: 100%;
+    height: 45px;
+    background-color: var(--primary-dark-cyan);
+    border-radius: 7px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: var(--neutral-very-dark-blue);
+}
+
+.button img{
+    width: 15px;
+    color: var(--neutral-white);
+}
+
+.button span{
+    color: var(--neutral-white);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.attribution{
+    margin-bottom: 10px;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: var( --primary-dark-cyan)
+}
